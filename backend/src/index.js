@@ -18,8 +18,17 @@ const app = express();
 connectDB();
 
 // Middleware
+const corsOptions = {
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:3001',
+    'https://ese.vercel.app',
+    'https://*.vercel.app'
+  ],
+  credentials: true,
+};
 app.use(helmet()); // Security headers
-app.use(cors()); // Cross-origin requests
+app.use(cors(corsOptions)); // Cross-origin requests with specific origins
 app.use(express.json()); // Parse JSON bodies
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 

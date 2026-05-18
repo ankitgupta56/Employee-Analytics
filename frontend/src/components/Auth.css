@@ -1,0 +1,121 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  padding: 20px;
+}
+
+.auth-box {
+  background: white;
+  padding: 45px 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  max-width: 420px;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+}
+
+.auth-box h2 {
+  text-align: center;
+  color: #1a1f3a;
+  margin-bottom: 35px;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #1a1f3a;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #d4d9e8;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  font-weight: 600;
+  color: #1a1f3a;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+  background-color: white;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.35);
+  letter-spacing: 0.4px;
+}
+
+.auth-box button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.4);
+}
+
+.auth-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: linear-gradient(135deg, #fef2f2 0%, #fff5f5 100%);
+  color: #7f1d1d;
+  padding: 16px 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 5px solid #ef4444;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+}
+
+.auth-box p {
+  text-align: center;
+  margin-top: 25px;
+  color: #4a5568;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.auth-box a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.auth-box a:hover {
+  color: #7c3aed;
+  text-decoration: none;
+}

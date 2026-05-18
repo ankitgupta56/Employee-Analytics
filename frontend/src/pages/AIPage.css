@@ -1,0 +1,39 @@
+.ai-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 20px;
+}
+
+.ai-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ai-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+}
+
+.ai-header p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .ai-page {
+    padding: 10px;
+  }
+
+  .ai-header {
+    padding: 30px 20px;
+  }
+
+  .ai-header h1 {
+    font-size: 24px;
+  }
+}
